@@ -1,0 +1,28 @@
+#!/bin/bash
+
+selected=$(echo "Shutdown
+Reboot
+Log Out
+Lock
+Suspend" | rofi -no-config -dmenu  -location 1 -yoffset 4 -width 300 -xoffset 4 -color-normal "#282828, #ebdbb2,
+#282828, #504945, #ebdbb2" -color-window "#282828, #282828, #504945" -hide-scrollbar)
+
+if [ "$selected" == "Shutdown" ]
+        then prompt 'Do you really want to shutdown the computer' 'shutdown'
+
+
+elif [ "$selected" == "Reboot" ]
+        then prompt 'Do you really want to reboot the computer' 'reboot'
+
+elif [ "$selected" == "Log Out" ]
+        then prompt 'Do you really want to exit i3?' 'i3-msg exit'
+
+elif [ "$selected" == "Lock" ]
+        then i3lock-fancy -n -p
+
+elif [ "$selected" == "Suspend" ]
+        then prompt 'Do you really want to suspend the computer' 'systemctl suspend'
+
+else
+        echo "nothing"
+fi

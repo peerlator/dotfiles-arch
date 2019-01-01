@@ -1,0 +1,4 @@
+; ~/.config/polybar/config
+
+[section/base]
+include-file = /home/peer/.dotfiles/polybar/config.polybar
