@@ -94,6 +94,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Linters
     Plug 'neomake/neomake'
 
+    " PyWal
+    Plug 'dylanaraps/wal.vim'
+
 call plug#end()
 
 " ============================================================================
@@ -137,8 +140,6 @@ set fillchars+=vert:\
 ca w!! w !sudo tee "%"
 
 " set Colorscheme
-colorscheme dracula
-set background=dark
 
 " clear search results
 nnoremap <esc> :noh<CR>
@@ -181,7 +182,6 @@ autocmd BufWritePre *.py execute ':Black'
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='dracula'
 
 " nerd tree
 let NERDTreeShowHidden=1

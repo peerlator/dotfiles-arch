@@ -39,5 +39,8 @@ git clone https://github.com/peerlator/FiraCodeFantasqueSansMonoNerdfonts.git
 mv **/*.ttf .
 sudo cp *.ttf /usr/share/fonts/TTF/
 
-# pywal
-yay -S python-pywal
+# compton
+yay -S compton
+
+# playerctl
+yay -S playerctl
