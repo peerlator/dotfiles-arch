@@ -17,10 +17,3 @@ for filename in $(echo $DOTFILES/**/install.sh | tr " " "\n")
 do
     sh $filename
 done
-
-echo "Linking configuration files"
-for filename in $(echo $DOTFILES/**/*.symlink | tr " " "\n")
-do
-    target=$(head -1 $filename | tr " " "\n" | grep "/")
-    $(cp $filename ${target/"~"/$HOME})
-done

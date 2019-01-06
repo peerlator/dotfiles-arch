@@ -37,3 +37,7 @@ mkdir ~/.fonts
 cd ~/.fonts
 git clone https://github.com/peerlator/FiraCodeFantasqueSansMonoNerdfonts.git
 mv **/*.ttf .
+sudo cp *.ttf /usr/share/fonts/TTF/
+
+# pywal
+yay -S python-pywal

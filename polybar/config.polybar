@@ -60,8 +60,7 @@ modules-left = powermenu
 modules-center = music-info music-prev music-pause music-next
 modules-right =  xkeyboard wlan eth battery date
 
-tray-position = right
-tray-padding = 2
+tray-position = none
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -110,8 +109,7 @@ modules-left = i3
 modules-center =
 modules-right = filesystem memory cpu temperature date
 
-tray-position = right
-tray-padding = 2
+tray-position = none
 ;tray-transparent = true
 ;tray-background = #0063ff
 
@@ -247,7 +245,7 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 
-format-connected =
+format-connected = <ramp-signal> <label-connected>
 format-connected-underline = ${colors.dark-red}
 label-connected = %essid%
 

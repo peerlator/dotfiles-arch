@@ -18,6 +18,8 @@ do
 	source $file
 done
 
+source $DOTFILES/python/py.zsh
+
 # source $DOTFILES/python/py.zsh
 unset config_files
 

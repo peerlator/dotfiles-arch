@@ -1,3 +1,11 @@
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_THEME="powerlevel9k/powerlevel9k"
+plugins=(
+    zsh-autosuggestions
+    git
+    zsh-syntax-highlighting
+    zsh-completions
+)
+export PATH=$PATH:$DOTFILES/scripts
+export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+autoload -U compinit && compinit

@@ -1,4 +1,0 @@
-# ~/.config/i3/config
-
-# Load all i3 files
-exec_always cat $DOTFILES/**/*.i3 > ~/.config/i3/config
