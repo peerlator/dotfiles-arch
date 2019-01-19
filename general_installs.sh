@@ -1,9 +1,7 @@
 # yay --noconfirm
 mkdir ~/builds
-cd ~/builds
-git clone https://aur.archlinux.org/yay --noconfirm.git
-cd yay --noconfirm
-makepkg -si
+git clone https://aur.archlinux.org/yay.git ~/builds/yay
+(cd ~/builds/yay && makepkg -si)
 
 # Bluetooth
 sudo pacman --noconfirm -S bluez bluez-utils
@@ -35,9 +33,7 @@ sudo systemctl enable gdm.service
 
 # Font
 mkdir ~/.fonts
-cd ~/.fonts
-git clone https://github.com/peerlator/FiraCodeFantasqueSansMonoNerdfonts.git
-mv **/*.ttf .
+git clone https://github.com/peerlator/FiraCodeFantasqueSansMonoNerdfonts.git ~/.fonts/
 sudo cp *.ttf /usr/share/fonts/TTF/
 
 # compton
