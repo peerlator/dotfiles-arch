@@ -1,7 +1,7 @@
 zsh
 
-yay -S pyenv
-yay -S pyenv-virtualenv
+yay --noconfirm -S pyenv
+yay --noconfirm -S pyenv-virtualenv
 
 pyenv install 3.6.8
 

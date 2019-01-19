@@ -1,6 +1,3 @@
-export DOTFILES=~/.dotfiles
-export HOME=~
-
 # permission
 echo "setting up permissions"
 sudo chmod +x $DOTFILES/**/*.sh

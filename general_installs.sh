@@ -1,36 +1,36 @@
-# Yay
+# yay --noconfirm
 mkdir ~/builds
 cd ~/builds
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/yay --noconfirm.git
+cd yay --noconfirm
 makepkg -si
 
 # Bluetooth
-sudo pacman -S bluez bluez-utils
+sudo pacman --noconfirm -S bluez bluez-utils
 sudo systemctl enable bluetooth.service
 
 # Audio
-sudo pacman -S pulseaudio-alsa pulseaudio-bluetooth pulsemixer
+sudo pacman --noconfirm -S pulseaudio-alsa pulseaudio-bluetooth pulsemixer
 
 # Notifications
-sudo pacman -S dunst
+sudo pacman --noconfirm -S dunst
 ln -s ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
 
 # rsync
-sudo pacman -S rsync
+sudo pacman --noconfirm -S rsync
 
 # i3lock-fancy
-yay -S i3lock-fancy-multimonitor-git
+yay --noconfirm -S i3lock-fancy-multimonitor-git
 
 # Network
-sudo pacman -S networkmanager
+sudo pacman --noconfirm -S networkmanager
 sudo systemctl enable NetworkManager.service
 
 # Neofetch
-sudo pacman -S neofetch
+sudo pacman --noconfirm -S neofetch
 
 # Display Manager
-sudo pacman -S gnome-session gnome-shell gdm
+sudo pacman --noconfirm -S gnome-session gnome-shell gdm
 sudo systemctl enable gdm.service
 
 # Font
@@ -41,10 +41,10 @@ mv **/*.ttf .
 sudo cp *.ttf /usr/share/fonts/TTF/
 
 # compton
-yay -S compton
+yay --noconfirm -S compton
 
 # playerctl
-yay -S playerctl
+yay --noconfirm -S playerctl
 
 # Unclutter
-yay -S unclutter
+yay --noconfirm -S unclutter

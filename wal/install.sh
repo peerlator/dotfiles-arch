@@ -1,4 +1,4 @@
-yay -S pywal
+yay --noconfirm -S pywal
 rm -rf ~/.config/wal/colorschemes
 rm -rf ~/.config/wal/templates
 ln -s $DOTFILES/wal/colorschemes ~/.config/wal/

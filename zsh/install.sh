@@ -1,5 +1,5 @@
 # install zsh
-# yay -S zsh
+# yay --noconfirm -S zsh
 
 # Install oh-my-zsh
 main() {

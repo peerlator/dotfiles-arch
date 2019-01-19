@@ -5,4 +5,4 @@ for_window [instance="rangerdropdown"] border pixel 3
 for_window [instance="rangerdropdown"] sticky enable
 exec --no-startup-id st -n rangerdropdown -e ranger
 
-bindsym $mod+p [instance="rangerdropdown"] scratchpad show; [instance="rangerdropdown"] move position center;
+bindsym $mod+Shift+f [instance="rangerdropdown"] scratchpad show; [instance="rangerdropdown"] move position center;

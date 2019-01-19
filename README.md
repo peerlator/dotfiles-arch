@@ -33,7 +33,15 @@ app_installs.sh.
 - install.sh - These files will all be executed when installing these dotfiles
 
 ## How to install
+- Clone repository
+```
+git clone https://github.com/peerlator/dotfiles-arch.git ~/.dotfiles
+```
 - Delete anything which you don't want to be installed.
-- Edit conky/conky.text - Change the cpu visualasation and change ethernet and wifi card names
+- Edit conky/conky.text - Change the cpu visualasations and change ethernet and wifi card names
 - Edit polybar/config.polybar - Change the wireless and wired card names
+- Export DOTFILES location
+```bash
+DOTFILES=~/.dotfiles
+```
 - Run the install.sh file in the main directory 

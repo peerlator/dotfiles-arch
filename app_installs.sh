@@ -1,8 +1,8 @@
 # firefox
-yay -S firefox
+yay --noconfirm -S firefox
 
 # chromium
-yay -S chromium
+yay --noconfirm -S chromium
 
 # st
 cd ~builds
@@ -12,16 +12,16 @@ make
 sudo make install
 
 # Conky
-sudo pacman -S conky
+sudo pacman --noconfirm -S conky
 
 #  Zeal
-sudo pacman -S zeal
+sudo pacman --noconfirm -S zeal
 
 # Todo List
-yay -S task
+yay --noconfirm -S task
 
 # Spotify
-yay -S spotify
+yay --noconfirm -S spotify
 
 # virtualbox
-yay -S virtualbox
+yay --noconfirm -S virtualbox

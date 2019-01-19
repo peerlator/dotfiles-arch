@@ -1,4 +1,4 @@
-yay -S code
+yay --noconfirm -S code
 sudo cp $DOTFILES/vscode/start_vscode.sh /
 sudo cp $DOTFILES/vscode/vscode.desktop /usr/share/applications/
 
