@@ -87,4 +87,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
-ln -s zshrc.symlink ~/.zshrc
+ln -s ~/.dotfiles/zsh/zshrc.symlink ~/.zshrc
