@@ -1,7 +1,7 @@
 # Basic Bindings
 bindsym	$mod+Return		    exec $term
 bindsym $mod+Shift+e 		exec prompt "Exit i3" "i3-msg exit"
-bindsym Mod1+q			    [con_id="__focused__" instance="^(?!dropdown|pythonshell|conky-dropdown).*$"] kill
+bindsym Mod1+q			    [con_id="__focused__" instance="^(?!dropdown|pythonshell|conky-quickview|rangerdropdown).*$"] kill
 bindsym $mod+Shift+r		exec $DOTFILES/i3/reload.sh
 bindsym $mod+d			    exec rofi -show drun -eh 2 -padding 50 -bw 0 -lines 5 -width 100% -location 1
 bindsym $mod+Shift+x		exec i3lock-fancy -n -p
@@ -44,3 +44,12 @@ bindsym $mod+F2             exec playerctl play-pause
 bindsym $mod+F1             exec playerctl previous
 bindsym $mod+F3             exec playerctl next
 
+# Gaps
+bindsym $mod+Mod1+plus      gaps inner current plus 5
+bindsym $mod+Mod1+minus     gaps inner current minus 5
+
+bindsym $mod+plus           gaps outer current plus 5
+bindsym $mod+minus          gaps outer current minus 5
+
+bindsym $mod+shift+plus     gaps inner current set 15; gaps outer current set 15
+bindsym $mod+shift+minus    gaps inner current set 0; gaps outer current set 0

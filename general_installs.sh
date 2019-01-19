@@ -14,6 +14,7 @@ sudo pacman -S pulseaudio-alsa pulseaudio-bluetooth pulsemixer
 
 # Notifications
 sudo pacman -S dunst
+ln -s ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
 
 # rsync
 sudo pacman -S rsync
@@ -44,3 +45,6 @@ yay -S compton
 
 # playerctl
 yay -S playerctl
+
+# Unclutter
+yay -S unclutter

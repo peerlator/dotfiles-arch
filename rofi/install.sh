@@ -2,4 +2,4 @@
 yay -S rofi
 
 # symlink
-ln -s $DOTFILES/rofi/config.symlink ~/.config/rofi/config
+echo "rofi.theme: ~/.cache/wal/colors.rofi" > $HOME/.config/rofi/config
