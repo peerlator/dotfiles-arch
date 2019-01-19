@@ -5,7 +5,8 @@ yay --noconfirm -S firefox
 yay --noconfirm -S chromium
 
 # st
-cd ~builds
+mkdir ~/builds
+cd ~/builds
 git clone https://github.com/LukeSmithxyz/st.git
 cd st
 make

@@ -1,4 +1,5 @@
 yay --noconfirm -S pywal
+mkdir ~/.config/wal
 rm -rf ~/.config/wal/colorschemes
 rm -rf ~/.config/wal/templates
 ln -s ~/.dotfiles/wal/colorschemes ~/.config/wal/

@@ -1,3 +1,4 @@
+mkdir ~/.config
 # permission
 echo "setting up permissions"
 sudo chmod +x ~/.dotfiles/**/*.sh
