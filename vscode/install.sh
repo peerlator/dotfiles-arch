@@ -15,6 +15,7 @@ code --install-extension batisteo.vscode-django
 code --install-extension azaugg.vscode-python-docstring
 code --install-extension deerawan.vscode-dash
 code --install-extension njpwerner.autodocstring
+code --install-extension neuron.neuron-ipe
 
 rm -rf ~/.config/Code\ -\ OSS/User/settings.json
 ln -s ~/.dotfiles/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json

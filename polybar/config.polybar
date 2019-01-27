@@ -1,12 +1,4 @@
-; ~/.config/polybar/config
-
-;==========================================================
-; To learn more about how to configure Polybar
-; go to https://github.com/jaagr/polybar
-;
-; The README contains alot of information
-;==========================================================
-
+#### Colors ##############################
 [colors]
 background = ${xrdb:color0}
 background-alt = ${xrdb:color8}
@@ -29,134 +21,64 @@ cyan = ${xrdb:color14}
 light-grey = ${xrdb:color7}
 white = ${xrdb:color15}
 
+#### Bars ################################
+
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 13.0
-fixed-center = false
+height = 24
+offset-y = 0
 
+fixed-center = true
+
+font-0 = FuraCode Nerd Font Mono:style=medium:size=12;3
+font-1 = FuraCode Nerd Font Mono:style=italic:size=12;3
+font-2 = FuraCode Nerd Font Mono:style=medium:size=16;3
+
+border-size = 8
+border-color = ${colors.background}
+line-size = 0
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
 background = ${colors.background}
-foreground = ${colors.foreground}
+foreground = ${colors.yellow}
 
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = #00222222
-
-padding-left = 2
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 1
-
-
-font-0 = FuraCode NerdFont:size=10
-
-modules-left = powermenu
-modules-center = music-info music-prev music-pause music-next
-modules-right =  xkeyboard wlan eth battery date
-
-tray-position = none
-;tray-transparent = true
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
+modules-left =  power-menu audio-control audio-5 audio-10 audio-15 audio-20 audio-25 audio-30 audio-35 audio-40 audio-45 audio-end
+modules-center = music-info music-prev music-pause music-next 
+modules-right = xkeyboard wlan date
 
 [bar/bottom]
 monitor = ${env:MONITOR:}
 width = 100%
+height = 24
+offset-y = 0
 bottom = true
-height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 13.0
-fixed-center = false
 
+fixed-center = true
+
+font-0 = FuraCode Nerd Font Mono:style=medium:size=12;3
+font-1 = FuraCode Nerd Font Mono:style=italic:size=12;3
+font-2 = FuraCode Nerd Font Mono:style=medium:size=16;3
+
+border-size = 8
+border-color = ${colors.background}
+line-size = 0
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
 background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 2
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 1
-
-font-0 = FuraCode NerdFont:size=10
+foreground = ${colors.yellow}
 
 modules-left = i3
-modules-center =
-modules-right = filesystem memory cpu temperature date
+modules-center = 
+modules-right =  filesystem memory cpu temperature
 
-tray-position = none
-;tray-transparent = true
-;tray-background = #0063ff
+#### Arrows #############################
 
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.dark-cyan}
-
-label-layout = %layout%
-label-layout-underline = ${self.format-prefix-underline}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${self.format-prefix-underline}
-label-indicator-underline = ${self.format-prefix-underline}
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
+#### Modules ############################
 [module/i3]
 type = internal/i3
 
@@ -169,26 +91,29 @@ label-mode-padding = 2
 label-mode-foreground = ${colors.black}
 label-mode-background = ${colors.blue}
 
-label-focused = %icon%
-label-focused-background = ${colors.background-alt}
-label-focused-underline = ${colors.dark-blue}
-label-focused-padding = 2
+label-focused = "%{T3}%{T-} %icon% %{T3}%{T-}"
+label-focused-background = ${colors.yellow}
+label-focused-foreground = ${colors.background}
+label-focused-padding = 0
 
-label-unfocused = %icon%
-label-unfocused-padding = 2
-label-unfocused-background = ${colors.background}
+label-unfocused = "%{T3}%{T-}%{T3}%{T-}"
+label-unfocused-padding = 0
+label-unfocused-background = ${colors.blue}
+label-unfocused-foreground = ${colors.background}
 
-label-urgent = %icon%
-label-urgent-padding = 2
+label-urgent = "%{T3}%{T-}%icon%%{T3}%{T-}"
+label-urgent-padding = 0
 label-urgent-background = ${colors.magenta}
 label-urgent-foreground = ${colors.background}
 
-label-visible = %icon%
-label-visible-padding = 2
-label-visible-underline = ${colors.dark-blue}
+label-visible = "%{T3}%{T-}%icon%%{T3}%{T-}"
+label-visible-padding = 0
+label-visible-foreground = ${colors.background}
+label-visible-background = ${colors.blue}
+
 
 ws-icon-0 = 1;
-ws-icon-1 = 2;
+ws-icon-1 = 2;
 ws-icon-2 = 3;﬏
 ws-icon-3 = 4;
 ws-icon-4 = 5;5
@@ -197,48 +122,145 @@ ws-icon-6 = 7;7
 ws-icon-7 = 8;8
 ws-icon-8 = 9;9
 ws-icon-9 = 10;阮
-ws-icon-10 = test;test
+
+[module/audio-control]
+type = custom/script
+exec = exec $DOTFILES/polybar/scripts/audio-control.sh
+interval = 3
+click-left = pulsemixer --toggle-mute
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-5]
+type = custom/script
+exec = exec $DOTFILES/polybar/scripts/audio-tester.sh 5
+interval = 3
+click-left = pulsemixer --set-volume 5
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-10]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 10
+interval = 3
+click-left = pulsemixer --set-volume 10
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-15]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 15
+interval = 3
+click-left = pulsemixer --set-volume 15
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-20]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 20
+interval = 3
+click-left = pulsemixer --set-volume 20
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-25]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 25
+interval = 3
+click-left = pulsemixer --set-volume 25
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-30]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 30
+interval = 3
+click-left = pulsemixer --set-volume 30
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-35]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 35
+interval = 3
+click-left = pulsemixer --set-volume 35
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-40]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 40
+interval = 3
+click-left = pulsemixer --set-volume 40
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-45]
+type = custom/script
+exec = $DOTFILES/polybar/scripts/audio-tester.sh 45
+interval = 3
+click-left = pulsemixer --set-volume 45
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/audio-end]
+type = custom/script
+exec = echo "%{T3}%{T-}"
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+
+[module/power-menu]
+type = custom/script
+exec = echo "%{T3}%{T-}%{T3}%{T-}"
+interval = 1
+click-left = exec $DOTFILES/rofi/menus/power_menu
+format-background = ${colors.dark-red}
+format-foreground = ${colors.background}
 
 [module/music-info]
 type = custom/script
 exec = echo "$(playerctl metadata xesam:artist) | $(playerctl metadata xesam:title)"
 interval = 1
-format-prefix = " "
+format-prefix = "%{T3}%{T-}  "
+format-background = ${colors.dark-blue}
+format-foreground = ${colors.background}
 
 [module/music-prev]
 type = custom/script
-exec = echo "玲"
-interval = 1
+exec = echo " 玲"
 click-left = playerctl previous
+format-background = ${colors.dark-blue}
+format-foreground = ${colors.background}
 
 [module/music-pause]
 type = custom/script
-exec = echo "懶"
-interval = 1
+exec = echo " 懶"
 click-left = playerctl play-pause
+format-background = ${colors.dark-blue}
+format-foreground = ${colors.background}
 
 [module/music-next]
 type = custom/script
-exec = echo "怜"
-interval = 1
+exec = echo " 怜 %{T3}%{T-}"
 click-left = playerctl next
+format-background = ${colors.dark-blue}
+format-foreground = ${colors.background}
 
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
 
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.cyan}
-label = %percentage:2%%
+format-prefix = "%{T3}%{T- }  "
+format-prefix-foreground = ${colors.background}
+format-prefix-background = ${colors.cyan}
 
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.dark-green}
-label = %percentage_used%%
+label-layout = "%layout% %{T3}%{T-}"
+label-layout-foreground = ${colors.background}
+label-layout-background = ${colors.cyan}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.cyan}
 
 [module/wlan]
 type = internal/network
@@ -247,7 +269,11 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = ${colors.dark-red}
-label-connected = %essid%
+format-connected-background = ${colors.dark-magenta}
+label-connected-foreground = ${colors.background}
+label-connected = %essid% %{T3}%{T-}
+format-connected-prefix = "%{T3}%{T- }"
+format-connected-prefix-foreground = ${colors.background}
 
 format-disconnected =
 ;format-disconnected =
@@ -260,102 +286,51 @@ ramp-signal-1 = 直
 ramp-signal-2 = 直
 ramp-signal-3 = 直
 ramp-signal-4 = 直
-ramp-signal-foreground = ${colors.foreground-alt}
-
-[module/eth]
-type = internal/network
-interface = ens2
-interval = 3.0
-
-format-connected-underline = ${colors.dark-red}
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected =
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+ramp-signal-foreground = ${colors.background}
 
 [module/date]
 type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %d-%m-%Y"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.dark-blue}
+format-prefix = %{T3}%{T- } 
+format-prefix-foreground = ${colors.background}
+format-prefix-background = ${colors.dark-yellow}
+label = %date% %time% %{T3}%{T-}
+label-background = ${colors.dark-yellow}
+label-foreground = ${colors.background}
 
-label = %date% %time%
+[module/filesystem]
+type = internal/fs
+interval = 25
 
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = AC
-full-at = 98
+mount-0 = /
 
-format-charging =
-format-charging-underline = ${colors.green}
+label-mounted = %{T3}%{T-} %mountpoint%: %percentage_used%% %{T3}%{T-}
+label-unmounted = 
+label-mounted-background = ${colors.dark-green}
+label-mounted-foreground = ${colors.background}
 
-format-discharging =
-format-discharging-underline = ${self.format-charging-underline}
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "%{T3}%{T-}  "
+format-underline = ${colors.cyan}
+label = %percentage:2%% %{T3}%{T-}
+format-background = ${colors.dark-red}
+format-foreground = ${colors.background}
 
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${colors.yellow}
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = "%{T3}%{T-}  "
+format-underline = ${colors.dark-green}
+label = %percentage_used%% %{T3}%{T-}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format =
-format-underline = {colors.yellow}
-format-warn =
-format-warn-underline = ${colors.dark-red}
-
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = ${colors.dark-red}
-; TODO: find out what they do
-ramp-0 = 1
-ramp-1 = 2
-ramp-2 = 3
-ramp-foreground = ${colors.foreground-alt}
-
-[module/powermenu]
-type = custom/script
-exec = echo ""
-interval = 1
-click-left = exec $DOTFILES/rofi/menus/power_menu
-format-underline = ${colors.dark-cyan}
-
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-
-[global/wm]
-margin-top = 5
-margin-bottom = 5
-
-; vim:ft=dosini
+format-background = ${colors.dark-cyan}
+format-foreground = ${colors.background}

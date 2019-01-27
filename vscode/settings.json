@@ -148,5 +148,10 @@
     "material-icon-theme.activeIconPack": "angular",
     "material-icon-theme.hidesExplorerArrows": false,
     "material-icon-theme.showWelcomeMessage": false,
-    "autoDocstring.docstringFormat": "default"
+    "autoDocstring.docstringFormat": "default",
+    "terminal.external.linuxExec": "st",
+    "terminal.integrated.shell.linux": "/usr/bin/bash",
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=numpy,tensorflow"
+    ]
 }
