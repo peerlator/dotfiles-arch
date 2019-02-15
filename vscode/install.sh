@@ -1,6 +1,5 @@
 yay --noconfirm -S code
 sudo cp ~/.dotfiles/vscode/start_vscode.sh /
-sudo cp ~/.dotfiles/vscode/vscode.desktop /usr/share/applications/
 
 code --install-extension ms-python.python
 code --install-extension oderwat.indent-rainbow

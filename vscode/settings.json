@@ -3,7 +3,7 @@
     "editor.fontFamily": "FuraCode Nerd Font",
     "workbench.colorTheme": "vs-wal",
     "breadcrumbs.enabled": true,
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "editor.formatOnSave": true,
     "editor.lineNumbers": "relative",
     "editor.minimap.maxColumn": 60,
@@ -153,5 +153,7 @@
     "terminal.integrated.shell.linux": "/usr/bin/bash",
     "python.linting.pylintArgs": [
         "--extension-pkg-whitelist=numpy,tensorflow"
-    ]
+    ],
+    "editor.selectionClipboard": false,
+    "terminal.integrated.fontFamily": "FuraCode Nerd Font"
 }

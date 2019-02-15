@@ -1,5 +1,5 @@
 light_or_dark=$(echo "Dark
-Wallpaper" | rofi -location 1 -yoffset 4 -width 300 -xoffset 4 -dmenu)
+Wallpaper" | rofi -location 1 -yoffset 0 -width 300 -xoffset 0 -dmenu)
 mv $(which wal) /usr/bin
 if [ $light_or_dark = "Dark" ] 
 then

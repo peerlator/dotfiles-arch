@@ -44,3 +44,5 @@ yay --noconfirm -S playerctl
 
 # Unclutter
 yay --noconfirm -S unclutter
+
+yay --noconfirm -S numix-icon-theme-git lxappearance

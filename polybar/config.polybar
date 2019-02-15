@@ -26,7 +26,7 @@ white = ${xrdb:color15}
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 24
+height = 23
 offset-y = 0
 
 fixed-center = true
@@ -45,14 +45,14 @@ module-margin-right = 0
 background = ${colors.background}
 foreground = ${colors.yellow}
 
-modules-left =  power-menu audio-control audio-5 audio-10 audio-15 audio-20 audio-25 audio-30 audio-35 audio-40 audio-45 audio-end
-modules-center = music-info music-prev music-pause music-next 
+modules-left =  power-menu audio
+;modules-center = music-info music-prev music-pause music-next 
 modules-right = xkeyboard wlan date
 
 [bar/bottom]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 24
+height = 23
 offset-y = 0
 bottom = true
 
@@ -76,7 +76,6 @@ modules-left = i3
 modules-center = 
 modules-right =  filesystem memory cpu temperature
 
-#### Arrows #############################
 
 #### Modules ############################
 [module/i3]
@@ -115,99 +114,13 @@ label-visible-background = ${colors.blue}
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;﬏
-ws-icon-3 = 4;
+ws-icon-3 = 4;ﴬ
 ws-icon-4 = 5;5
 ws-icon-5 = 6;6
 ws-icon-6 = 7;7
 ws-icon-7 = 8;8
 ws-icon-8 = 9;9
 ws-icon-9 = 10;阮
-
-[module/audio-control]
-type = custom/script
-exec = exec $DOTFILES/polybar/scripts/audio-control.sh
-interval = 3
-click-left = pulsemixer --toggle-mute
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-5]
-type = custom/script
-exec = exec $DOTFILES/polybar/scripts/audio-tester.sh 5
-interval = 3
-click-left = pulsemixer --set-volume 5
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-10]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 10
-interval = 3
-click-left = pulsemixer --set-volume 10
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-15]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 15
-interval = 3
-click-left = pulsemixer --set-volume 15
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-20]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 20
-interval = 3
-click-left = pulsemixer --set-volume 20
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-25]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 25
-interval = 3
-click-left = pulsemixer --set-volume 25
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-30]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 30
-interval = 3
-click-left = pulsemixer --set-volume 30
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-35]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 35
-interval = 3
-click-left = pulsemixer --set-volume 35
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-40]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 40
-interval = 3
-click-left = pulsemixer --set-volume 40
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-45]
-type = custom/script
-exec = $DOTFILES/polybar/scripts/audio-tester.sh 45
-interval = 3
-click-left = pulsemixer --set-volume 45
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
-
-[module/audio-end]
-type = custom/script
-exec = echo "%{T3}%{T-}"
-format-background = ${colors.dark-green}
-format-foreground = ${colors.background}
 
 [module/power-menu]
 type = custom/script
@@ -334,3 +247,41 @@ label = %percentage_used%% %{T3}%{T-}
 
 format-background = ${colors.dark-cyan}
 format-foreground = ${colors.background}
+
+[module/audio]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+
+format-volume = " <label-volume><bar-volume>"
+label-volume = "%{T3}%{T-} 墳 "
+format-background = ${colors.dark-green}
+format-foreground = ${colors.background}
+label-volume-background = ${colors.dark-green}
+label-volume-foreground = ${colors.background}
+format-volume-suffix = %{T3}%{T-}
+format-volume-suffix-background = ${colors.dark-green}
+format-volume-suffix-foreground = ${colors.background}
+;format-volume-foreground = #FFFFFF
+
+format-muted= "<label-muted>"
+label-muted = "%{T3}%{T-} 婢 %{T3}%{T-}"  
+label-muted-background = ${colors.dark-green}
+label-muted-foreground = ${colors.background}
+
+bar-volume-width = 10
+bar-volume-foreground = ${colors.background}
+bar-volume-background = ${colors.dark-green}
+bar-volume-gradient = false
+
+bar-volume-indicator = 
+bar-volume-indicator-foreground = ${colors.background-alt}
+bar-volume-indicator-background = ${colors.dark-green}
+
+bar-volume-fill = 
+bar-volume-fill-foreground = ${colors.background}
+bar-volume-fill-background = ${colors.dark-green}
+
+bar-volume-empty = 
+bar-volume-empty-foreground = ${colors.background}
+bar-volume-empty-background = ${colors.dark-green}

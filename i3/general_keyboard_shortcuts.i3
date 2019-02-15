@@ -3,7 +3,7 @@ bindsym	$mod+Return		    exec $term
 bindsym $mod+Shift+e 		exec prompt "Exit i3" "i3-msg exit"
 bindsym Mod1+q			    [con_id="__focused__" instance="^(?!dropdown|pythonshell|conky-quickview|rangerdropdown).*$"] kill
 bindsym $mod+Shift+r		exec $DOTFILES/i3/reload.sh
-bindsym $mod+d			    exec rofi -show drun -eh 2 -padding 50 -bw 0 -lines 5 -width 100% -location 1
+bindsym $mod+d			    exec rofi -show drun -padding 80 -bw 0 -lines 8 -width 100% -location 1 -show-icons 
 bindsym $mod+Shift+x		exec i3lock-fancy -n -p
 bindsym $mod+m			    move scratchpad
 
@@ -53,3 +53,7 @@ bindsym $mod+minus          gaps outer current minus 5
 
 bindsym $mod+shift+plus     gaps inner current set 15; gaps outer current set 15
 bindsym $mod+shift+minus    gaps inner current set 0; gaps outer current set 0
+
+# Volume
+bindsym $mod+F9             exec pulsemixer --change-volume -5
+bindsym $mod+F10            exec pulsemixer --change-volume +5

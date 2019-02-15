@@ -10,6 +10,6 @@ exec_always --no-startup-id $DOTFILES/polybar/launch.sh
 
 exec --no-startup-id unclutter
 
-exec xrandr --output DP-1 --auto --output HDMI-3 --auto --left-of DP-1 &
+exec xrandr --output HDMI-1 --auto --output HDMI-3 --auto --left-of HDMI-1
 exec setxkbmap -layout de &
 

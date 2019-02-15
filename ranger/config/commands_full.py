@@ -885,7 +885,7 @@ class edit(Command):
 
     Opens the specified file in vim
     """
-
+    
     def execute(self):
         if not self.arg(1):
             self.fm.edit_file(self.fm.thisfile.path)
