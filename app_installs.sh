@@ -22,3 +22,6 @@ yay --noconfirm -S spotify
 
 # virtualbox
 yay --noconfirm -S virtualbox
+
+# libre office
+yay --noconfirm -S libreoffice-fresh

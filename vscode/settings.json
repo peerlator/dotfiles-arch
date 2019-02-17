@@ -38,7 +38,7 @@
         "--ignore=E501"
     ],
     "python.formatting.blackArgs": [
-        "--line-length=120"
+        "--line-length=100"
     ],
     "python.formatting.provider": "black",
     "python.linting.flake8Enabled": false,

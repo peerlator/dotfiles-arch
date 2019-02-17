@@ -3,4 +3,5 @@
 
 echo > ~/.config/i3/config && 
 for f in $DOTFILES/**/*.i3; do (cat "${f}"; echo) >> ~/.config/i3/config; done &&
+for f in $DOTFILES/**/*.polybar; do (cat "${f}"; echo) >> ~/.config/polybar/config; done &&
 i3-msg restart
