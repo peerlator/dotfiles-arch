@@ -46,3 +46,5 @@ yay --noconfirm -S playerctl
 yay --noconfirm -S unclutter
 
 yay --noconfirm -S numix-icon-theme-git lxappearance
+
+yay --noconfirm -S lsd
