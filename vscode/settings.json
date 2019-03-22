@@ -1,7 +1,6 @@
 {
     "editor.fontLigatures": true,
     "editor.fontFamily": "FuraCode Nerd Font",
-    "workbench.colorTheme": "vs-wal",
     "breadcrumbs.enabled": true,
     "editor.fontSize": 15,
     "editor.formatOnSave": true,
@@ -35,7 +34,7 @@
     "indentRainbow.errorColor": "rgba(128,32,32,0)",
     "python.formatting.autopep8Args": [
         "--indent-size=4",
-        "--ignore=E501"
+        "--ignore=E501,C0330"
     ],
     "python.formatting.blackArgs": [
         "--line-length=100"
@@ -142,7 +141,6 @@
         }
     ],
     "extensions.ignoreRecommendations": true,
-    "docker.showExplorer": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.mode.statusBar.enabled": false,
     "material-icon-theme.activeIconPack": "angular",
@@ -155,5 +153,10 @@
         "--extension-pkg-whitelist=numpy,tensorflow"
     ],
     "editor.selectionClipboard": false,
-    "terminal.integrated.fontFamily": "FuraCode Nerd Font"
+    "terminal.integrated.fontFamily": "FuraCode Nerd Font",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "vs-wal",
+    "workbench.settings.useSplitJSON": true,
+    "window.titleBarStyle": "custom"
 }

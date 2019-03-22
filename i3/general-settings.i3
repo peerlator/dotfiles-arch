@@ -14,7 +14,7 @@ set $reboot 	sudo -A reboot
 #                       border              background         text                 indicator
 client.focused          $darkblack          $darkblack         $white	            $darkred
 client.unfocused        $darkblack          $darkblack         $darkwhite           $darkred
-client.focused_inactive $darkblack 	    $darkblack	       $darkwhite	    $darkred
+client.focused_inactive $darkblack 	        $darkblack	       $darkwhite	        $darkred
 client.urgent           $darkred            $darkred 	       $white	            $darkred
 
 for_window [class=".*"] border pixel 0
