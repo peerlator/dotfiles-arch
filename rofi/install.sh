@@ -1,5 +1,5 @@
 # Install rofi
 yay --noconfirm -S rofi
-mkdir ~/.config/rofi
+mkdir $HOME/.config/rofi
 # symlink
-echo "rofi.theme: ~/.cache/wal/colors.rofi" > ~/.config/rofi/config
+echo "rofi.theme: $HOME/.cache/wal/colors.rofi" > $HOME/.config/rofi/config

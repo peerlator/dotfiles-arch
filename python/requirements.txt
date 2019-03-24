@@ -19,3 +19,4 @@ pep8
 isort
 yapf
 pynvim
+pywal

@@ -1,5 +1,5 @@
 yay --noconfirm -S code
-sudo cp ~/.dotfiles/vscode/start_vscode.sh /
+sudo cp $HOME/.dotfiles/vscode/start_vscode.sh /
 
 code --install-extension ms-python.python
 code --install-extension oderwat.indent-rainbow
@@ -16,7 +16,7 @@ code --install-extension deerawan.vscode-dash
 code --install-extension njpwerner.autodocstring
 code --install-extension neuron.neuron-ipe
 
-rm -rf ~/.config/Code\ -\ OSS/User/settings.json
-ln -s ~/.dotfiles/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json
-rm -rf ~/.config/Code\ -\ OSS/User/keybindings.json
-ln -s ~/.dotfiles/vscode/settings.json ~/.config/Code\ -\ OSS/User/keybindings.json
+rm -rf $HOME/.config/Code\ -\ OSS/User/settings.json
+ln -s $HOME/.dotfiles/vscode/settings.json $HOME/.config/Code\ -\ OSS/User/settings.json
+rm -rf $HOME/.config/Code\ -\ OSS/User/keybindings.json
+ln -s $HOME/.dotfiles/vscode/settings.json $HOME/.config/Code\ -\ OSS/User/keybindings.json

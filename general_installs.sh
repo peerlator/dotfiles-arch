@@ -1,7 +1,7 @@
 # yay
-mkdir ~/builds
-git clone https://aur.archlinux.org/yay.git ~/builds/yay
-(cd ~/builds/yay && makepkg -si)
+mkdir $HOME/builds
+git clone https://aur.archlinux.org/yay.git $HOME/builds/yay
+(cd $HOME/builds/yay && makepkg -si)
 
 # Bluetooth
 sudo pacman --noconfirm -S bluez bluez-utils
@@ -12,7 +12,7 @@ sudo pacman --noconfirm -S pulseaudio-alsa pulseaudio-bluetooth pulsemixer
 
 # Notifications
 sudo pacman --noconfirm -S dunst
-ln -s ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
+ln -s $HOME/.cache/wal/dunstrc $HOME/.config/dunst/dunstrc
 
 # rsync
 sudo pacman --noconfirm -S rsync
@@ -32,8 +32,8 @@ sudo pacman --noconfirm -S gnome-session gnome-shell gdm
 sudo systemctl enable gdm.service
 
 # Font
-mkdir ~/.fonts
-git clone https://github.com/peerlator/FiraCodeFantasqueSansMonoNerdfonts.git ~/.fonts/
+mkdir $HOME/.fonts
+git clone https://github.com/peerlator/FiraCodeFantasqueSansMonoNerdfonts.git $HOME/.fonts/
 sudo cp *.ttf /usr/share/fonts/TTF/
 
 # compton

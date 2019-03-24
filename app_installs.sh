@@ -5,8 +5,8 @@ yay --noconfirm -S firefox
 yay --noconfirm -S chromium
 
 # st
-git clone https://github.com/LukeSmithxyz/st.git ~/.builds/st
-(cd ~/builds/st && make && sudo make install)
+git clone https://github.com/LukeSmithxyz/st.git $HOME/.builds/st
+(cd $HOME/builds/st && make && sudo make install)
 
 # Conky
 sudo pacman --noconfirm -S conky

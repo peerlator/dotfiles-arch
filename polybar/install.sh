@@ -1,5 +1,5 @@
 # Install polybar
 yay --noconfirm -S polybar
-mkdir ~/.config/polybar
-cp ~/.dotfiles/polybar/config.symlink ~/.config/polybar/config
+mkdir $HOME/.config/polybar
+cp $HOME/.dotfiles/polybar/config.symlink $HOME/.config/polybar/config
 

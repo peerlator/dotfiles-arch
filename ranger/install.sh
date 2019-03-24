@@ -1,4 +1,4 @@
 yay --noconfirm -S ranger#
-mkdir ~/.config/ranger
-rm ~/.config/ranger/*
-ln -s ~/.dotfiles/ranger/config/* ~/.config/ranger/
+mkdir $HOME/.config/ranger
+rm $HOME/.config/ranger/*
+ln -s $HOME/.dotfiles/ranger/config/* $HOME/.config/ranger/
