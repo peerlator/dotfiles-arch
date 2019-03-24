@@ -1,4 +1,5 @@
 # PEERS DOTFILES
+!IMPORTANT: At the moment the install scripts don't work. So just copy the config contents you want.
 
 This reposetory contain my dotfiles. To install them, simply run the install.sh
 file. The program will install firefox, VSCode, i3wm, gdm, polybar, ...
