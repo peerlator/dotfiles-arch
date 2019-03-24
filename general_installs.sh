@@ -1,4 +1,4 @@
-# yay --noconfirm
+# yay
 mkdir ~/builds
 git clone https://aur.archlinux.org/yay.git ~/builds/yay
 (cd ~/builds/yay && makepkg -si)

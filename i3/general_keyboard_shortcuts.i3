@@ -5,7 +5,7 @@ bindsym Mod1+q			    [con_id="__focused__" instance="^(?!dropdown|pythonshell|co
 bindsym $mod+Shift+r		exec $DOTFILES/i3/reload.sh
 bindsym $mod+d			    exec rofi -show drun -padding 80 -bw 0 -lines 8 -width 100% -location 1 -show-icons 
 bindsym $mod+Shift+x		exec i3lock-fancy -n -p
-bindsym $mod+m			    move scratchpad
+bindsym $mod+m			    move workspace to output left
 
 # layout
 bindsym $mod+s			    layout stacking

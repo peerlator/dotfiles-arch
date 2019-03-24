@@ -1,9 +1,7 @@
-{
-    {
+{{
         "name": "vs-val",
         "type": "dark",
-        "colors": {
-            {
+        "colors": {{
                 "terminal.background": "{background}",
                 "terminal.foreground": "{foreground}",
                 "terminal.ansiBrightBlack": "{color8}",
@@ -204,7 +202,7 @@
                 "statusBarItem.prominentBackground": "{color1}",
                 "statusBarItem.prominentHoverBackground": "{color3}",
                 "statusBar.border": null,
-                "titleBar.activeBackgroun": "{color0}",
+                "titleBar.activeBackground": "{color0}",
                 "titleBar.activeForeground": "{foreground}",
                 "titleBar.inactiveBackground": "{color0}",
                 "titleBar.inactiveForeground": "{color8}",
@@ -250,256 +248,159 @@
                 "breadcrumb.activeSelectionForeground": "{foreground}",
                 "breadcrumbPicker.background": "{color0}",
                 "menu.separatorBackground": null
-            }
-        },
+            }},
         "tokenColors": [
-            {
-                {
+            {{
                     "scope": [
                         "emphasis"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "strong"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "bold"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "header"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "source"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "meta.diff",
                         "meta.diff.header"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color8}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "markup.inserted"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "markup.deleted"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color1}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "markup.changed"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "invalid"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color1}",
                             "fontStyle": "underline italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "invalid.deprecated"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}",
                             "fontStyle": "underline italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "entity.name.filename"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "scope": [
                         "markup.error"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color1}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Underlined markup",
                     "scope": [
                         "markup.underline"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "underline"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Bold markup",
                     "scope": [
                         "markup.bold"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "bold",
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Markup headings",
                     "scope": [
                         "markup.heading"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "bold",
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Markup italic",
                     "scope": [
                         "markup.italic"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Bullets, lists (prose)",
                     "scope": [
                         "beginning.punctuation.definition.list.markdown",
                         "beginning.punctuation.definition.quote.markdown",
                         "punctuation.definition.link.restructuredtext"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Inline code (prose)",
                     "scope": [
                         "markup.inline.raw",
                         "markup.raw.restructuredtext"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Links (prose)",
                     "scope": [
                         "markup.underline.link",
                         "markup.underline.link.image"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Link text, image alt text (prose)",
                     "scope": [
                         "meta.link.reference.def.restructuredtext",
@@ -507,127 +408,82 @@
                         "string.other.link.description",
                         "string.other.link.title"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Blockquotes (prose)",
                     "scope": [
                         "entity.name.directive.restructuredtext",
                         "markup.quote"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Horizontal rule (prose)",
                     "scope": [
                         "meta.separator.markdown"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color8}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Code blocks",
                     "scope": [
                         "fenced_code.block.language",
                         "markup.raw.inner.restructuredtext",
                         "markup.fenced_code.block.markdown punctuation.definition.markdown"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Prose constants",
                     "scope": [
                         "punctuation.definition.constant.restructuredtext"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Braces in markdown headings",
                     "scope": [
                         "markup.heading.markdown punctuation.definition.string.begin",
                         "markup.heading.markdown punctuation.definition.string.end"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Braces in markdown paragraphs",
                     "scope": [
                         "meta.paragraph.markdown punctuation.definition.string.begin",
                         "meta.paragraph.markdown punctuation.definition.string.end"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Braces in markdown blockquotes",
                     "scope": [
                         "markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.begin",
                         "markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.end"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "User-defined class names",
                     "scope": [
                         "entity.name.type.class"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}",
                             "fontStyle": "normal"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "this, super, self, etc.",
                     "scope": [
                         "keyword.expressions-and-types.swift",
@@ -637,30 +493,20 @@
                         "variable.other.readwrite.instance.ruby",
                         "variable.parameter.function.language.special"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color5}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Inherited classes",
                     "scope": [
                         "entity.other.inherited-class"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic",
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Comments",
                     "scope": [
                         "comment",
@@ -668,114 +514,74 @@
                         "unused.comment",
                         "wildcard.comment"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color8}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "JSDoc-style comment keywords/classes",
                     "scope": [
                         "comment keyword.codetag.notation",
                         "comment.block.documentation keyword",
                         "comment.block.documentation storage.type.class"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "JSDoc-style comment parameters",
                     "scope": [
                         "comment.block.documentation variable"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Constants",
                     "scope": [
                         "constant",
                         "variable.other.constant"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Constant escape sequences",
                     "scope": [
                         "constant.character.escape",
                         "constant.character.string.escape",
                         "constant.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "HTML tags",
                     "scope": [
                         "entity.name.tag"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "CSS attribute parent selectors ('&')",
                     "scope": [
                         "entity.other.attribute-name.parent-selector"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "HTML/CSS attribute names",
                     "scope": [
                         "entity.other.attribute-name"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Function names",
                     "scope": [
                         "entity.name.function",
@@ -788,15 +594,10 @@
                         "support.function.any-method.lua",
                         "keyword.operator.function.infix"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Function parameters",
                     "scope": [
                         "entity.name.variable.parameter",
@@ -806,129 +607,84 @@
                         "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
                         "variable.parameter"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic",
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Decorators",
                     "scope": [
                         "meta.decorator variable.other.readwrite",
                         "meta.decorator variable.other.property"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}",
                             "fontStyle": "italic"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Decorator Objects",
                     "scope": [
                         "meta.decorator variable.other.object"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Keywords",
                     "scope": [
                         "keyword",
                         "punctuation.definition.keyword"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Keyword \"new\"",
                     "scope": [
                         "keyword.control.new",
                         "keyword.operator.new"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "bold"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Generic selectors (CSS/SCSS/Less/Stylus)",
                     "scope": [
                         "meta.selector"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Language Built-ins",
                     "scope": [
                         "support"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic",
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Built-in magic functions and constants",
                     "scope": [
                         "support.function.magic",
                         "support.variable",
                         "variable.other.predefined"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "regular",
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Built-in functions / properties",
                     "scope": [
                         "support.function",
                         "support.type.property-name"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "regular"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Separators (key/value, namespace, inheritance, pointer, hash, slice, etc)",
                     "scope": [
                         "constant.other.symbol.hashkey punctuation.definition.constant.ruby",
@@ -956,15 +712,10 @@
                         "support.other.chomping-indicator.yaml",
                         "punctuation.separator.annotation"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Variable interpolation operators",
                     "scope": [
                         "meta.string-contents.quoted.double punctuation.definition.variable",
@@ -979,15 +730,10 @@
                         "punctuation.section.embedded.end source.ruby",
                         "punctuation.definition.variable.makefile"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Keys (serializable languages)",
                     "scope": [
                         "entity.name.function.target.makefile",
@@ -995,43 +741,28 @@
                         "entity.name.tag.yaml",
                         "variable.other.key.toml"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Dates / timestamps (serializable languages)",
                     "scope": [
                         "constant.other.date",
                         "constant.other.timestamp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "YAML aliases",
                     "scope": [
                         "variable.other.alias.yaml"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic underline",
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Storage",
                     "scope": [
                         "storage",
@@ -1039,16 +770,11 @@
                         "meta.interface-or-protocol storage.type.objc",
                         "source.groovy storage.type.def"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "regular",
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Types",
                     "scope": [
                         "entity.name.type",
@@ -1071,180 +797,115 @@
                         "storage.type.haskell",
                         "storage.type.ocaml"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic",
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Generics, templates, and mapped type declarations",
                     "scope": [
                         "entity.name.type.type-parameter",
                         "meta.indexer.mappedtype.declaration entity.name.type",
                         "meta.type.parameters entity.name.type"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Modifiers",
                     "scope": [
                         "storage.modifier"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "RegExp string",
                     "scope": [
                         "string.regexp",
                         "constant.other.character-class.set.regexp",
                         "constant.character.escape.backslash.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Non-capture operators",
                     "scope": [
                         "punctuation.definition.group.capture.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color13}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "RegExp start and end characters",
                     "scope": [
                         "string.regexp punctuation.definition.string.begin",
                         "string.regexp punctuation.definition.string.end"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color1}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Character group",
                     "scope": [
                         "punctuation.definition.character-class.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Capture groups",
                     "scope": [
                         "punctuation.definition.group.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Assertion operators",
                     "scope": [
                         "punctuation.definition.group.assertion.regexp",
                         "keyword.operator.negation.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color1}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Positive lookaheads",
                     "scope": [
                         "meta.assertion.look-ahead.regexp"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color2}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Strings",
                     "scope": [
                         "string"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "String quotes (temporary vscode fix)",
                     "scope": [
                         "punctuation.definition.string.begin",
                         "punctuation.definition.string.end"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color11}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Property quotes (temporary vscode fix)",
                     "scope": [
                         "punctuation.support.type.property-name.begin",
                         "punctuation.support.type.property-name.end"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color8}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Variables and object properties",
                     "scope": [
                         "variable",
@@ -1254,87 +915,57 @@
                         "variable.other.constant.ts",
                         "variable.other.constant.tsx"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Destructuring / aliasing reference name (LHS)",
                     "scope": [
                         "meta.import variable.other.readwrite",
                         "meta.object-binding-pattern-variable variable.object.property",
                         "meta.variable.assignment.destructured.object.coffee variable"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "italic",
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Destructuring / aliasing variable name (RHS)",
                     "scope": [
                         "meta.import variable.other.readwrite.alias",
                         "meta.export variable.other.readwrite.alias",
                         "meta.variable.assignment.destructured.object.coffee variable variable"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "normal",
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "GraphQL keys",
                     "scope": [
                         "meta.selectionset.graphql variable"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "GraphQL function arguments",
                     "scope": [
                         "meta.selectionset.graphql meta.arguments variable"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "GraphQL fragment name (definition)",
                     "scope": [
                         "entity.name.fragment.graphql",
                         "variable.fragment.graphql"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color6}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Edge cases (foreground color resets)",
                     "scope": [
                         "constant.other.symbol.hashkey.ruby",
@@ -1351,93 +982,58 @@
                         "punctuation.separator.list.comma.css",
                         "constant.language.empty-list.haskell"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Shell variables prefixed with \"$\" (edge case)",
                     "scope": [
                         "source.shell variable.other"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Powershell constants mistakenly scoped to `support`, rather than `constant` (edge)",
                     "scope": [
                         "support.constant"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "fontStyle": "normal",
                             "foreground": "{color5}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Makefile prerequisite names",
                     "scope": [
                         "meta.scope.prerequisites.makefile"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "SCSS attibute selector strings",
                     "scope": [
                         "meta.attribute-selector.scss"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color3}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "SCSS attribute selector brackets",
                     "scope": [
                         "punctuation.definition.attribute-selector.end.bracket.square.scss",
                         "punctuation.definition.attribute-selector.begin.bracket.square.scss"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{foreground}"
-                        }
-                    }
-                }
-            },
-            {
-                {
+                        }}}},
+            {{
                     "name": "Haskell Pragmas",
                     "scope": [
                         "meta.preprocessor.haskell"
                     ],
-                    "settings": {
-                        {
+                    "settings": {{
                             "foreground": "{color8}"
-                        }
-                    }
-                }
-            }
+                        }}}}
         ]
-    }
-}
+    }}
