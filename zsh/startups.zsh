@@ -6,6 +6,8 @@ plugins=(
     zsh-completions
 )
 export PATH=$PATH:$DOTFILES/scripts
+export PATH=$PATH:$HOME/.spells
+export PATH=$PATH:$HOME/builds/flutter/bin
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR="st -e nvim"
 source $ZSH/oh-my-zsh.sh

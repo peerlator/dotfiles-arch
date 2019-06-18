@@ -1,1 +1,1 @@
-alias c="$DOTFILES/vscode/start_vscode.sh"
+alias c="code"

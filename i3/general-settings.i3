@@ -6,7 +6,7 @@ gaps inner 15
 gaps outer 15
 
 # General variables
-set $term 	st
+set $term 	alacritty
 set $mod	Mod4
 set $shutdown 	sudo -A shutdown -h now
 set $reboot 	sudo -A reboot
